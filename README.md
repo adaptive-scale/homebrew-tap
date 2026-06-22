@@ -24,9 +24,10 @@ This directory is the content of the **separate** public tap repo
 `homebrew-<tap>`, so `adaptive-scale/tap` resolves to `adaptive-scale/homebrew-tap`.
 
 - `Formula/exo.rb` — the formula. **Generated** by `scripts/release-cli.sh` in
-  the main repo; do not hand-edit. It installs prebuilt binaries from the
-  GitHub Releases of the public `adaptive-scale/exo` artifact repo
-  (darwin/linux × amd64/arm64).
+  the main repo; do not hand-edit. It installs prebuilt binaries served from the
+  `exo.assets.adaptive.live` asset host
+  (`/assets/exo/<version>/exo_<version>_<os>_<arch>.tar.gz`), covering
+  darwin/linux × amd64/arm64.
 
 ## Releasing a new version
 
@@ -41,15 +42,15 @@ From the main repo:
 
 ```sh
 # Build all platforms, package, checksum, render Formula/exo.rb,
-# and create the GitHub release (uploads the tarballs):
-scripts/release-cli.sh v0.2.122
+# and publish the tarballs to the exo.assets.adaptive.live asset host:
+scripts/release-cli.sh v0.2.219
 
 # ...or regenerate the formula only, without publishing:
-scripts/release-cli.sh v0.2.122 --no-publish
+scripts/release-cli.sh v0.2.219 --no-publish
 
 # Local iteration against the live working tree (NOT reproducible — never
 # publish from this):
-scripts/release-cli.sh v0.2.122 --no-publish --from-worktree
+scripts/release-cli.sh v0.2.219 --no-publish --from-worktree
 ```
 
 Then copy the regenerated `homebrew-tap/Formula/exo.rb` into the
