@@ -10,22 +10,22 @@ class Exo < Formula
   on_macos do
     on_arm do
       url "https://exo.assets.adaptive.live/exo/0.2.344/exo_0.2.344_darwin_arm64.tar.gz"
-      sha256 "40ad744eb1e02578afd531ac6311577620c470fa07f6a7648965975738e3d4e1"
+      sha256 "cf7e695f865af395302812f98ad0a608ac3fb2e67fd2681cf51c49f804715784"
     end
     on_intel do
       url "https://exo.assets.adaptive.live/exo/0.2.344/exo_0.2.344_darwin_amd64.tar.gz"
-      sha256 "7dfd923d60be0018a3c196087924ac2b29c18ef59c5dcb1ff880d6c2f2dcb07f"
+      sha256 "a422442f02f8cba4b574f369390e262f065e4e3de22569afd1ac74558f535801"
     end
   end
 
   on_linux do
     on_arm do
       url "https://exo.assets.adaptive.live/exo/0.2.344/exo_0.2.344_linux_arm64.tar.gz"
-      sha256 "e07fdcf1e96dc9ac05a29c7e79acfd9fc8d9a291b1ebf52709b6f73c86c3202d"
+      sha256 "848ebc0bd8fcd670b780d72fa7ecb05d9ec81f0edb71796a2761aed5326742ed"
     end
     on_intel do
       url "https://exo.assets.adaptive.live/exo/0.2.344/exo_0.2.344_linux_amd64.tar.gz"
-      sha256 "985297d6b59e4f89c2020c518bd75ddf62d73d9a4549a137bf86f3e1d0dccdba"
+      sha256 "11dc2893b29c4cac97dd6db8551a33f05216241ae423327ab77e54c47a4493e3"
     end
   end
 
