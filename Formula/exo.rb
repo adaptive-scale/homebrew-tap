@@ -5,27 +5,27 @@
 class Exo < Formula
   desc "Command-line client for the Exo platform"
   homepage "https://github.com/adaptive-scale/exo"
-  version "0.2.344"
+  version "0.2.345"
 
   on_macos do
     on_arm do
-      url "https://exo.assets.adaptive.live/exo/0.2.344/exo_0.2.344_darwin_arm64.tar.gz"
-      sha256 "cf7e695f865af395302812f98ad0a608ac3fb2e67fd2681cf51c49f804715784"
+      url "https://exo.assets.adaptive.live/exo/0.2.345/exo_0.2.345_darwin_arm64.tar.gz"
+      sha256 "4326dbc76ea13d1de745dcdbe77388ceaf66dfac27f7dfd802474ea36a749820"
     end
     on_intel do
-      url "https://exo.assets.adaptive.live/exo/0.2.344/exo_0.2.344_darwin_amd64.tar.gz"
-      sha256 "a422442f02f8cba4b574f369390e262f065e4e3de22569afd1ac74558f535801"
+      url "https://exo.assets.adaptive.live/exo/0.2.345/exo_0.2.345_darwin_amd64.tar.gz"
+      sha256 "882812880b6295122337f9a06ac762b3bc16fe37098c688426724716658eb3ee"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://exo.assets.adaptive.live/exo/0.2.344/exo_0.2.344_linux_arm64.tar.gz"
-      sha256 "848ebc0bd8fcd670b780d72fa7ecb05d9ec81f0edb71796a2761aed5326742ed"
+      url "https://exo.assets.adaptive.live/exo/0.2.345/exo_0.2.345_linux_arm64.tar.gz"
+      sha256 "ac7e3728788e70d83f5588b6c300efec1fb9b67a260886b3f18d167b4d10252f"
     end
     on_intel do
-      url "https://exo.assets.adaptive.live/exo/0.2.344/exo_0.2.344_linux_amd64.tar.gz"
-      sha256 "11dc2893b29c4cac97dd6db8551a33f05216241ae423327ab77e54c47a4493e3"
+      url "https://exo.assets.adaptive.live/exo/0.2.345/exo_0.2.345_linux_amd64.tar.gz"
+      sha256 "da5708e71bc6b1fd682f0cc73e1716ce3dd9f2ede31d5d9d05c8791b9d71ab33"
     end
   end
 
@@ -34,6 +34,6 @@ class Exo < Formula
   end
 
   test do
-    assert_match "0.2.344", shell_output("#{bin}/exo version")
+    assert_match "0.2.345", shell_output("#{bin}/exo version")
   end
 end
